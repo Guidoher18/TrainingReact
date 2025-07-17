@@ -1,0 +1,33 @@
+.box-container {
+  height: 100vh;
+  width: 35vw;
+  display: flex;
+  background-color: gray;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+
+#box-1 {
+  /* display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; */
+  width: 200px;
+  background-color: dodgerblue;
+  border: 2px solid #000;
+  padding: 10px;
+  flex-shrink: 2;
+  flex: 2 2 150px;
+}
+
+#box-2 {
+  width: 200px;
+  background-color: orangered;
+  border: 2px solid #000;
+  padding: 10px;
+  flex: 1 1 150px;
+}
