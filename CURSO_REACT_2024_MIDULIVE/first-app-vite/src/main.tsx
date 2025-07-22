@@ -1,10 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import { Button } from './Button'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Button text="Botón 1" />
+    <Button text="Botón 2" />
+    <Button text="Botón 3" />
   </StrictMode>,
 )
