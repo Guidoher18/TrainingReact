@@ -1,0 +1,47 @@
+.twitter-card {
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+  display: flex;
+  flex: row no-wrap;
+  gap: 0.5rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.article__header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.article__header__img {
+  height: 40px;
+  margin-right: 8px;
+  width: 40px;
+}
+
+.article__header__div p {
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  margin: 0;
+}
+
+.article__aside {
+  display: flex;
+  align-items: center;
+}
+
+.article__aside__button {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  background-color: #fff;
+  color: rgb(15, 20, 25);
+  cursor: pointer;
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+  padding: 5px 16px;
+  width: 100px;
+}
