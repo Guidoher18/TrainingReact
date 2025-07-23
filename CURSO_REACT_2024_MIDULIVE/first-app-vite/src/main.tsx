@@ -9,18 +9,17 @@ createRoot(document.getElementById('root')!).render(
     <h3><strong>A quién seguir</strong></h3>
     <TwitterCard
       avatarUrl='https://avatar.iran.liara.run/public/42'
-      account='@guidoher'
-      isFollowing
+      account='@guido'
+      initialIsFollowing
     >
-      Guido C
+      Guido
     </TwitterCard>
 
     <TwitterCard
       avatarUrl='https://avatar.iran.liara.run/public/42'
-      account='@alkdjlajldslajsldlajsdjl'
-      isFollowing={false}
+      account='@jDoe'
     >
-      lakdjslajdjalsdjalkdjlakdjlakdjlaskdj
+      John Doe
     </TwitterCard>
   </StrictMode>,
 )

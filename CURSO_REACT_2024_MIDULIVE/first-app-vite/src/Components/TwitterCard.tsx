@@ -1,6 +1,16 @@
+import { useState } from 'react';
 import './Styles/TwitterCard.css';
 
-export const TwitterCard = ({ children, avatarUrl, account, isFollowing }: { children: string; avatarUrl: string; account: string, isFollowing: boolean }) => {
+export const TwitterCard = ({ children, avatarUrl, account, initialIsFollowing = false }: { children: string; avatarUrl: string, account: string, initialIsFollowing?: boolean }) => {
+    const [isFollowing, setIsFollowing] = useState(initialIsFollowing);
+    
+    const text = isFollowing ? 'Siguiendo' : 'Seguir';
+    const buttonClassName = isFollowing ? 'article__aside__button is-following' : 'article__aside__button';
+
+    const handleClick = () => {
+        setIsFollowing(!isFollowing);
+    };
+
     return (
         <article className='twitter-card'>
             <header className='article__header'>
@@ -15,7 +25,7 @@ export const TwitterCard = ({ children, avatarUrl, account, isFollowing }: { chi
                 </div>
             </header>
             <aside className='article__aside'>
-                <button className='article__aside__button'><strong>{isFollowing ? 'Siguiendo' : 'Seguir'}</strong></button>
+                <button className={buttonClassName} onClick={handleClick}><strong>{text}</strong></button>
             </aside>
         </article>
     );
