@@ -1,0 +1,32 @@
+.board {
+  column-gap: 10px;
+  display: grid;
+  grid-template-rows: repeat(3, 70px);
+  grid-template-columns: repeat(3, 70px);
+  row-gap: 10px;
+}
+
+.turn__div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: 10px;
+  width: 400px;
+}
+
+.turn__h2-span {
+  color: greenyellow;
+}
+
+.turn__button-reload svg {
+  color: #fff;
+  height: 20px;
+  width: 20px;
+}
+
+.turn__button-reload {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
